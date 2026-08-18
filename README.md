@@ -7,7 +7,7 @@ A sleek, responsive, and feature-rich **Nasheed Audio Player Web Application** b
 ## 🚀 Live Demo & Repository
 
 * 🔗 **Live Demo:** [Click Here to View Live Player](https://farhan-iqbal41.github.io/Playlist/)
-* 📁 **GitHub Repository:** [Source Code](https://github.com/farhan-iqbal41/Nasheed-Playlist-App)
+* 📁 **GitHub Repository:** [Source Code](https://github.com/farhan-iqbal41/Playlist)
 
 ---
 
