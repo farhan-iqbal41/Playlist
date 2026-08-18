@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist of Nasheed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body> 
+    <div class="container">
+        <div class="player-card">
+            <div class="album-art-container">
+                <div class="album-art" id="albumArt">
+                    <img src="https://via.placeholder.com/300?text=Now+Playing" alt="Album Art" id="albumImage">
+                </div>
+            </div>
+
+            <div class="song-info">
+                <h2 class="song-title" id="songTitle">Loading...</h2>
+                <p class="artist-name" id="artistName">Unknown Artist</p>
+            </div>
+
+            <div class="progress-container">
+                <div class="time-display">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                    <input type="range" id="progressBar" min="0" max="100" value="0" class="progress-slider">
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="control-btn" id="shuffleBtn">
+                    <i class="fas fa-random"></i>
+                </button>
+    
+                <button class="control-btn" id="prevBtn">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+    
+                <button class="control-btn play-btn" id="playBtn">
+                    <i class="fas fa-play"></i>
+                </button>
+    
+                <button class="control-btn" id="nextBtn">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+    
+                <button class="control-btn" id="repeatBtn">
+                   <i class="fas fa-redo"></i>
+                </button>
+            </div>
+
+            <div class="volume-container">
+               <i class="fas fa-volume-up" style="cursor: pointer;"></i>
+    
+               <input type="range" class="volume-slider" id="volumeBar" min="0" max="100" value="100">
+    
+            </div>
+
+            <div class="playlist-toggle">
+                <button id="playlistToggleBtn" class="toggle-btn">
+                    <i class="fas fa-list"></i> Playlist
+                </button>
+            </div>
+        </div>
+
+        <div class="playlist-sidebar" id="playlistSidebar">
+            <div class="playlist-header">
+                <h3>My Playlist</h3>
+                <button id="closePlaylist" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="playlist" id="playlist">
+            </ul>
+        </div>
+
+        <audio id="audioPlayer"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
